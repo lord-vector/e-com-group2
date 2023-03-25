@@ -1,0 +1,19 @@
+First 3 days Agenda/ 4th April Due Date
+
+Swantatra --> Navigation bar(drop down as well) && Search && Favourite page
+Vamsi --> Slider Images && handle adding to favourite and adding to cart
+Chandramani/Team Lead --> cards and Most Purchased Description and Feature Description section
+Anuj --> checkout page && featured page
+
+
+Git Repo --> code base(html, css(bootstrap), js)
+
+1) Create a branch 
+2) Raise a PR(pull request)
+3) 
+
+Steps to follow
+
+1) clone the repo - git clone https://github.com/lord-vector/e-com-group2.git
+2) cd e-com-group2
+3) git checkout -b GP2-Anuj
