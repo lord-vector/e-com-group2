@@ -25,3 +25,9 @@ create a branch in repo and fetch it in local and make the changes
 
 1) Always goto the main branch
 2) Git Pull
+
+
+Improvments - 
+1) display card data on hover
+2) Back button from each pages
+3) Backgrounds
