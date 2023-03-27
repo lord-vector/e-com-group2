@@ -1,0 +1,41 @@
+    
+.slider-container {
+  position: relative;
+  margin: 50px;
+
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  padding: 50px;
+  width:90%;
+  height: 400px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.next {
+  left: 96%;
+}
