@@ -1,7 +1,9 @@
 body {
-  background-color: rgb(228, 228, 128);
+  background-image: url("https://www.searchenginejournal.com/wp-content/uploads/2022/08/google-shopping-ads-6304dccb7a49e-sej.png");
 }
-
+/* *{
+  border:1px solid red;
+} */
 .card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -11,10 +13,28 @@ body {
   cursor: pointer;
 }
 
-.grid {
+.grid{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abc {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  width: 60%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 20px black;
+}
+
+#des{
+  width: 40%;
 }
 
 .card-img-top {
@@ -26,4 +46,9 @@ body {
 .card-text {
   height: 5.5vw;
   overflow: auto;
+}
+button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

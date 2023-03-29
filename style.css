@@ -114,3 +114,16 @@
 
 
 
+#product div img{
+  width: 150px;
+}
+#product{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#product div{
+  margin: 15px;
+  border: 1px solid black;
+}
