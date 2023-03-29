@@ -44,18 +44,6 @@ prevBtn.addEventListener('click', () => {
 // Most Purchased section
 
 const prod = document.getElementById("product")
-/* <div class="card" style="width: 18rem;">
-      <img src="${items[count].images[0]}" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">${items[count].title}</h5>
-        <p class="card-text">
-          ${items[count].description}
-        </p>
-        <a href="#" class="btn btn-primary">
-          Go somewhere
-        </a>
-      </div>
-    </div> */
 
 
     fetch(`https://dummyjson.com/products/`)
