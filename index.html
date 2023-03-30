@@ -155,7 +155,7 @@
         </div>
       </nav>
     </section>
-    <div class="slider-container">
+    <!-- <div class="slider-container">
       <div class="slider">
         <div style="background-color: burlywood" class="card active">
           <h3>Card 1</h3>
@@ -176,33 +176,108 @@
           </p>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
-  </section>
-  <div class="slider-container">
-    <div class="slider">
-      <div style="background-color: burlywood" class="card-hero active">
-        <h3>Card 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- </section> -->
+    <section class="home">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-controls">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel"
+              data-slide-to="0"
+              class="active"
+              style="background-image: url('img/og-macbook-pro-202301.jpeg')"
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="1"
+              style="
+                background-image: url('img/iphone-12-finish-select-202207-purple.jpeg');
+              "
+            ></li>
+            <li
+              data-target="#carousel"
+              data-slide-to="2"
+              style="
+                background-image: url('img/airpods-max-hero-select-202011_FMT_WHH.jpeg');
+              "
+            ></li>
+          </ol>
+          <a
+            class="carousel-control-prev"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <img src="img/left-arrow.svg" alt="Prev" />
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <img src="img/right-arrow.svg" alt="Next" />
+          </a>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('img/og-macbook-pro-202301.jpeg')"
+          >
+            <div class="container">
+              <h2>macbook</h2>
+              <p>Features</p>
+              <div style="color: aliceblue">
+                Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural
+                Engine| 16GB unified memory| 512GB SSD storage| 16-inch Liquid
+                Retina XDR display| Three Thunderbolt 4 ports, HDMI port, SDXC
+                card slot, MagSafe 3 port| 140W USB-C Power Adapter| Backlit
+                Magic Keyboard with Touch ID US English
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item mobileclrchange"
+            style="
+              background-image: url('img/iphone-12-finish-select-202207-purple.jpeg');
+            "
+          >
+            <div class="container">
+              <h2>iPhone 12</h2>
+              <p>Pick your favourite</p>
+              <div class="mobiles">
+                <li style="background-color: rgb(155, 181, 206)">
+                  <a href="#"></a>
+                </li>
+                <li style="background-color: rgb(33, 94, 124)">
+                  <a href="#"></a>
+                </li>
+                <li style="background-color: rgb(165, 0, 17)">
+                  <a href="#"></a>
+                </li>
+                <li style="background-color: rgb(54, 73, 53)">
+                  <a href="#"></a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="
+              background-image: url('img/airpods-max-hero-select-202011_FMT_WHH.jpeg');
+            "
+          >
+            <div class="container">
+              <h2>Air pods max</h2>
+              <p>Pick your favourite</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style="background-color: #ccc" class="card-hero">
-        <h3>Card 2</h3>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div style="background-color: antiquewhite" class="card-hero">
-        <h3>Card 3</h3>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.
-        </p>
-      </div>
-    </div>
-    <button class="prev"><i class="fa fa-chevron-left"></i></button>
-    <button class="next"><i class="fa fa-chevron-right"></i></button>
-   
+    </section>
+
     <!-- most-purchased section -->
     <h3>Most Purchased</h3>
     <div id="most-purchased">
@@ -214,11 +289,10 @@
     <!-- Featured-categories section -->
     <h2>Featured Categories</h2>
     <div id="Featured-categories"></div>
-    
     <script src="script.js"></script>
-      <button class="prev"><i class="fa fa-chevron-left"></i></button>
-      <button class="next"><i class="fa fa-chevron-right"></i></button>
-      <script src="./Pages/feature page/feature.apicall.js"></script>
-    </div>
   </body>
+  <script src="bootstrap.bundle.min.js"></script>
+  <button class="prev"><i class="fa fa-chevron-left"></i></button>
+  <button class="next"><i class="fa fa-chevron-right"></i></button>
+  <!-- <script src="./Pages/feature page/feature.apicall.js"></script> -->
 </html>
