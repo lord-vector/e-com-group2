@@ -1,9 +1,14 @@
 body {
-  background-color: rgb(228, 228, 128);
+  background: linear-gradient(
+    132deg,
+    rgb(221, 221, 221) 0%,
+    rgb(110, 136, 161) 100%
+  );
 }
 
 .card {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.091) 0px 5px 15px;
+  padding: 5px;
 }
 
 .card:hover {
@@ -15,6 +20,8 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  margin: 10px auto;
+  width: 95vw;
 }
 
 .card-img-top {
@@ -26,4 +33,16 @@ body {
 .card-text {
   height: 5.5vw;
   overflow: auto;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imageShadow {
+  box-shadow: rgba(0, 0, 0, 0.091) 0px 5px 15px;
+  height: 250px;
+  padding: auto;
 }

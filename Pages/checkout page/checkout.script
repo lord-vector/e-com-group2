@@ -1,0 +1,3 @@
+const onCartClick = (...args) => {
+  console.log(args[0]);
+};
