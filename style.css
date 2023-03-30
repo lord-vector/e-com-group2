@@ -1,4 +1,9 @@
-    
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} 
+ 
 .slider-container {
   position: relative;
   margin: 50px;
@@ -39,3 +44,73 @@
 .next {
   left: 96%;
 }
+
+/* Adding Style to search bar */
+
+.navbar-custom .form-control {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid white;
+  margin-left: 80px;
+  width: 500px;
+}
+
+/* Adding style to icons */
+
+.navbar-nav i{
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+/* Adding Animation to favourites */
+
+.bi-heart-fill {
+  color: rgb(163, 159, 159);
+  transition: color 0.3s ease-in-out;
+}
+
+.bi-heart-fill:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.bi-heart:active {
+  transform: scale(1.5);
+}
+
+/* Adding Animation to cart */
+
+.bi-cart-fill {
+  color: rgb(163, 159, 159);
+  transition: color 0.3s ease-in-out;
+}
+
+.bi-cart-fill:hover {
+  color: rgb(87, 87, 255);
+  cursor: pointer;
+}
+
+.bi-cart:active {
+  transform: scale(1.5);
+}
+
+/* Adding media query to search */
+
+@media (max-width: 986px) {
+  .navbar-custom .form-control{
+    width:auto;
+    margin-left: 0px;
+  }
+  .navbar-nav{
+    align-items: center;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+
+
