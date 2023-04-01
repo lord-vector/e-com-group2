@@ -280,10 +280,55 @@
 
     <!-- most-purchased section -->
     <h3>Most Purchased</h3>
-    <div id="most-purchased">
-      <!-- <button id="left" onclick="left()"><</button> -->
-      <div id="product"></div>
-      <!-- <button id="right" onclick="right()">></button> -->
+    <div class="py-5" style="background-color: #e0e0e0" id="venue">
+      <div class="container">
+        <div class="row bg-primary animate-in-down">
+          <div class="p-4 col-md-6 align-self-center text-color">
+            <p class="m-0">Feel comfortable, and purchase items</p>
+            <h2>Discover the products</h2>
+            <p class="my-4">
+              Here at RCSV we bring you the varity of Products to choose from,
+              it is easy to choose and get that deliverd to your doorstep
+            </p>
+            <a href="#productsSlider " class="btn mb-3 p-2 btn-light"
+              >View the gallery</a
+            >
+          </div>
+          <div class="p-0 col-md-6">
+            <div
+              class="carousel slide"
+              data-ride="carousel"
+              id="productsSlider"
+            >
+              <div class="prod" class="carousel-inner" role="listbox"></div>
+              <a
+                class="carousel-control-prev"
+                href="#productsSlider"
+                role="button"
+                data-slide="previous"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#productsSlider"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Featured-categories section -->
@@ -292,7 +337,7 @@
     <script src="script.js"></script>
   </body>
   <script src="bootstrap.bundle.min.js"></script>
-  <button class="prev"><i class="fa fa-chevron-left"></i></button>
-  <button class="next"><i class="fa fa-chevron-right"></i></button>
+  <!-- <button class="prev"><i class="fa fa-chevron-left"></i></button>
+  <button class="next"><i class="fa fa-chevron-right"></i></button> -->
   <!-- <script src="./Pages/feature page/feature.apicall.js"></script> -->
 </html>
