@@ -43,33 +43,34 @@ let interval = setInterval(nextCard, 5000);
 
 // Most Purchased section
 
-const prod = document.getElementById("product");
+const prod = document.getElementsByClassName("prod")[0];
 
 function load(data) {
   // most purchased
 
-  var mPcard = '<ul class="grid">';
+  //var mPcard = '<ul class="grid">';
+  var mPcard = "";
 
   for (i = 0; i < 10; i++) {
     var temp = Math.floor(Math.random() * 30);
     console.log(temp);
     mPcard += `
-      <div class="card style="width: 18rem;">
-        <img src="${data[temp].images[0]}" class="card-img-top"/>
-        <div class="card-body">
-          <h5 class="card-title">${data[temp].title}</h5>
-          <p class="card-text">
-            ${data[temp].description}
-          </p>
-          <a href="#" class="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
-      </div>
+    <div class="carousel-item ${i === 0 && "active"}">
+    <img
+      class="d-block img-fluid w-100"
+      src=${data[i].images[0]}
+      alt="first slide"
+    />
+    <div class="carousel-caption">
+      <h3>${data[i].title}</h3>
+      <p>${data[i].description}</p>
+    </div>
+  </div>
       `;
   }
-  mPcard += "</ul>";
+  //mPcard += "</ul>";
   let frag = document.createRange().createContextualFragment(mPcard);
+  console.log(mPcard);
   prod.appendChild(frag);
 
   // featured categories

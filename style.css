@@ -314,3 +314,15 @@ body {
   height: 5.5vw;
   overflow: auto;
 }
+
+.text-color {
+  color: #fff;
+}
+
+.carousel-item img {
+  height: 400px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
