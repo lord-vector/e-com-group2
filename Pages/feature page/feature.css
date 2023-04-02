@@ -46,3 +46,15 @@ body {
   height: 250px;
   padding: auto;
 }
+
+.logoCompany {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.logoCompany img {
+  height: 40px;
+  width: 40px;
+}

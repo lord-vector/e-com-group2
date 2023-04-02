@@ -25,13 +25,17 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" href="img/Logo2.jpg" />
   </head>
 
   <body>
     <section>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">RCSV Store</a>
+          <div class="logoCompany">
+            <img src="img/Logo2.jpg" alt="" />
+            <a class="navbar-brand" href="#">RCSV Store</a>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -155,30 +159,6 @@
         </div>
       </nav>
     </section>
-    <!-- <div class="slider-container">
-      <div class="slider">
-        <div style="background-color: burlywood" class="card active">
-          <h3>Card 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div style="background-color: #ccc" class="card">
-          <h3>Card 2</h3>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div style="background-color: antiquewhite" class="card">
-          <h3>Card 3</h3>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-          </p>
-        </div>
-      </div>
-    </nav> -->
-
-    <!-- </section> -->
     <section class="home">
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-controls">
@@ -279,16 +259,16 @@
     </section>
 
     <!-- most-purchased section -->
-    <h3>Most Purchased</h3>
-    <div class="py-5" style="background-color: #e0e0e0" id="venue">
-      <div class="container">
+    <div class="py-5 bg123" id="venue">
+      <h3>Most Purchased</h3>
+      <div class="container bg345">
         <div class="row bg-primary animate-in-down">
           <div class="p-4 col-md-6 align-self-center text-color">
             <p class="m-0">Feel comfortable, and purchase items</p>
             <h2>Discover the products</h2>
             <p class="my-4">
-              Here at RCSV we bring you the varity of Products to choose from,
-              it is easy to choose and get that deliverd to your doorstep
+              Here at RCSV we bring you the varity of Products, it is easy to
+              choose from and get that deliverd to your doorstep
             </p>
             <a href="#productsSlider " class="btn mb-3 p-2 btn-light"
               >View the gallery</a
@@ -332,8 +312,35 @@
     </div>
 
     <!-- Featured-categories section -->
-    <h2>Featured Categories</h2>
-    <div id="Featured-categories"></div>
+    <div class="featuredCategory">
+      <h3>Featured Categories</h3>
+      <div id="Featured-categories"></div>
+    </div>
+
+    <!--Section 7: Footer-->
+    <div class="footer">
+      <p class="footer-text-left">
+        <a href="index.html" class="menu">home</a>
+        <a href="https://github.com/lord-vector/e-com-group2" class="menu"
+          >about</a
+        >
+        <a href="https://github.com/lord-vector/e-com-group2" class="menu"
+          >credits</a
+        >
+      </p>
+      <div class="footer-content-right">
+        <a href="https://github.com/lord-vector/e-com-group2"
+          ><img src="img/github.jpeg" class="icon-style" alt="Github icon"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="img/twitter.jpeg" class="icon-style" alt="Twitter icon"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="img/email.jpeg" class="icon-style" alt="Emailicon"
+        /></a>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
   <script src="bootstrap.bundle.min.js"></script>
