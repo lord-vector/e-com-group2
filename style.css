@@ -100,9 +100,12 @@ body {
 	border:3px solid transparent;
 	transition: all 0.3s ease;
 }
+
+
 .home .carousel-indicators li.active{
 	border-color: #ffffff;
 	transform: scale(1.2);
+  border-radius: 50%;
 }
 
 .home .carousel-control-next, 
@@ -243,6 +246,7 @@ body {
   }
 }
 
+/* #product div img{ */
 
 #Featured-categories {
   display: flex;
@@ -279,6 +283,9 @@ body {
   overflow: hidden;
   box-shadow: 5px 5px 15px black;
 }
+.fCatCard:hover{
+  transform: scale(1.1);
+}
 
 #most-purchased {
   overflow: hidden;
@@ -313,4 +320,105 @@ body {
 .card-text {
   height: 5.5vw;
   overflow: auto;
+}
+
+.text-color {
+  color: #fff;
+}
+
+.carousel-item img {
+  height: 400px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* _______________________________________________________________ */
+.footer {
+  padding: 50px 0 20px 0;
+  background-color: #35404f;
+  color: #878c94;
+}
+.footer .title{
+  text-align: left;
+  color:#fff;
+  font-size:25px;
+}
+.footer .social-icon{
+  padding:0px;
+  margin:0px;
+}
+.footer .social-icon a{
+  display:inline-block;
+  color:#fff;
+  font-size:25px;
+  padding:5px;
+}
+.footer .social-icon a:hover{
+  transform: scale(1.2);
+}
+.footer .acount-icon a{
+  display:block;
+  color:#fff;
+  font-size:18px;
+  padding:5px;
+  text-decoration:none;
+}
+.footer .acount-icon .fa{
+  margin-right:25px;
+}
+.footer .acount-icon .fa:hover{
+  transform: scale(1.4);
+}
+.heart:hover{
+  color:red;
+}
+.cart:hover{
+  color: black;
+}
+.user:hover{
+  color: brown;
+}
+.globe:hover{
+  color: rgb(100, 100, 160);
+}
+
+.footer .category a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 1px;
+  border-radius:4px;
+  margin-top: 6px;
+  background-color: black;
+  border: solid 1px #ffffff;
+}
+.footer .category a:hover{
+  transform: scale(1.1);
+  background-color:#fff;
+  color: #000000;
+}
+
+.footer .payment{
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+}
+.footer .payment li{
+  list-style-type:none
+}
+.footer .payment li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  float: left;
+  font-size: 25px;
+  padding: 10px 10px;
+}
+.footer .payment li a:hover{
+  transform: scale(1.3);
+  color: #000000;
+  
+  
 }
