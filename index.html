@@ -123,14 +123,19 @@
             <form class="d-flex mx-auto my-2 my-lg-0 navbar-custom">
               <input
                 class="form-control me-2 navbar-custom flex-grow-1 flex-sm-grow-1"
+                id="search-input"
                 type="search"
                 placeholder="Search Product"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-light" type="submit">
+              <button class="btn btn-outline-light" type="submit" id="search-button">
                 Search
               </button>
             </form>
+
+            <div id="results-container">
+                 
+            </div>
             <ul class="navbar-nav icons">
               <li class="nav-item cartfav">
                 <a class="nav-link position-relative" href="#">
@@ -221,4 +226,5 @@
       <script src="./Pages/feature page/feature.apicall.js"></script>
     </div>
   </body>
+  <script src="search.js"></script>
 </html>
