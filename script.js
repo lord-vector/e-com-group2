@@ -1,6 +1,17 @@
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const cards = document.querySelectorAll(".card");
+const nav = document.querySelector(".navbar")  // added nav selector
+
+// function to change background of navbar on scroll
+window.onscroll = ()=> { 
+  if (window.scrollY >= 200 ){
+      nav.style.backgroundColor= "black"
+    } 
+  else{
+    nav.style.backgroundColor = "transparent"
+  }
+}
 
 let currentCard = 0;
 

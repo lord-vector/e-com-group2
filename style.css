@@ -1,5 +1,5 @@
 .home .carousel-item {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -169,14 +169,22 @@ body {
 
 /* Adding Style to search bar */
 
+/* modified some margin values */
 .navbar-custom .form-control {
   background-color: white;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
   border-bottom: 2px solid white;
-  margin-left: 80px;
+  margin-left: 140px; 
+  margin-right: 10px;
   width: 500px;
+}
+
+/* Fixing navbar at top */
+.navbar{
+  position: fixed;
+  z-index: 100;
 }
 
 #venue {
@@ -191,6 +199,10 @@ body {
 
 .navbar-nav i {
   font-size: 1rem;
+}
+
+.navbar-nav{
+  margin-left: 25px; 
 }
 
 /* Adding Animation to favourites */

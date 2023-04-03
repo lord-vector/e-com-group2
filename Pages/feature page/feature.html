@@ -10,6 +10,11 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <!-- added font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
@@ -18,18 +23,155 @@
     <script src="./feature.apicall.js"></script>
     <title>RCSV ECOM</title>
     <link rel="stylesheet" href="feature.css" />
+    <link rel="icon" href="../../img/Logo2.jpg" />
   </head>
   <body>
-    <navbar>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <div class="logoCompany">
-            <img src="../../img/Logo2.jpg" alt="" />
-            <a class="navbar-brand" href="../../index.html">RCSV Store</a>
-          </div>
+
+    <!-- added navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="logoCompany">
+          <img src="../../img/Logo2.jpg" alt="" />
+          <a class="navbar-brand" href="../../index.html">RCSV Store</a>
         </div>
-      </nav>
-    </navbar>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Featured</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./feature.html?category=smartphones"
+                    >SmartPhones</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./feature.html?category=laptops"
+                    >Laptops</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./feature.html?category=fragrances"
+                    >Fragrances</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./feature.html?category=skincare"
+                    >SkinCare</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./feature.html?category=groceries"
+                    >Groceries</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accounts</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex mx-auto my-2 my-lg-0 navbar-custom">
+            <input
+              class="form-control me-2 navbar-custom flex-grow-1 flex-sm-grow-1"
+              type="search"
+              placeholder="Search Product"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
+          <ul class="navbar-nav icons">
+            <li class="nav-item cartfav">
+              <a class="nav-link position-relative" href="#">
+                <i class="bi bi-heart-fill"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger invisible"
+                  >1</span
+                >
+              </a>
+            </li>
+            <li class="nav-item cartfav">
+              <a class="nav-link position-relative" href="#">
+                <i class="bi bi-cart-fill"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger invisible"
+                  >1</span
+                >
+              </a>
+            </li>
+          </ul>
+          <button onclick="openCheckout()">cart</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- checkout section -->
+    <div id="cart">
+      <div id="top">
+        <h3>Cart items</h3>
+        <p>You have <span id="noOfItems">0</span> item in your cart</p>
+        <h4>Total : $<span id="checkoutPrice">0</span></h4>
+        <button id="placeOrder" onclick="hooray()">Place order</button>
+        <button id="close" onclick="closeCart()">x</button>
+        <button id="msg">Orders eligible for FREE Delivery. Start Checkout now!</button>
+      </div>
+      <hr>   
+    </div>
+
     <div class="grid"></div>
+    
   </body>
 </html>
