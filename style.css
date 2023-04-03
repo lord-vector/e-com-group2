@@ -176,15 +176,16 @@ body {
   border: none;
   border-radius: 5px;
   border-bottom: 2px solid white;
-  margin-left: 140px; 
+  margin-left: 140px;
   margin-right: 10px;
   width: 500px;
 }
 
 /* Fixing navbar at top */
-.navbar{
+.navbar {
   position: fixed;
   z-index: 100;
+  width: 100%;
 }
 
 #venue {
@@ -201,8 +202,8 @@ body {
   font-size: 1rem;
 }
 
-.navbar-nav{
-  margin-left: 25px; 
+.navbar-nav {
+  margin-left: 25px;
 }
 
 /* Adding Animation to favourites */

@@ -20,13 +20,16 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <script src="./feature.apicall.js"></script>
     <title>RCSV ECOM</title>
     <link rel="stylesheet" href="feature.css" />
     <link rel="icon" href="../../img/Logo2.jpg" />
   </head>
   <body>
-
     <!-- added navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -48,7 +51,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
@@ -129,9 +137,7 @@
               placeholder="Search Product"
               aria-label="Search"
             />
-            <button class="btn btn-outline-light" type="submit">
-              Search
-            </button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
           <ul class="navbar-nav icons">
             <li class="nav-item cartfav">
@@ -144,7 +150,11 @@
               </a>
             </li>
             <li class="nav-item cartfav">
-              <a class="nav-link position-relative" href="#">
+              <a
+                class="nav-link position-relative"
+                href="#"
+                onclick="openCheckout()"
+              >
                 <i class="bi bi-cart-fill"></i>
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger invisible"
@@ -153,7 +163,7 @@
               </a>
             </li>
           </ul>
-          <button onclick="openCheckout()">cart</button>
+          <!-- <button onclick="openCheckout()">cart</button> -->
         </div>
       </div>
     </nav>
@@ -166,12 +176,13 @@
         <h4>Total : $<span id="checkoutPrice">0</span></h4>
         <button id="placeOrder" onclick="hooray()">Place order</button>
         <button id="close" onclick="closeCart()">x</button>
-        <button id="msg">Orders eligible for FREE Delivery. Start Checkout now!</button>
+        <button id="msg">
+          Orders eligible for FREE Delivery. Start Checkout now!
+        </button>
       </div>
-      <hr>   
+      <hr />
     </div>
 
     <div class="grid"></div>
-    
   </body>
 </html>
