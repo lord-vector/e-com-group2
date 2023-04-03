@@ -81,7 +81,7 @@ body {
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	z-index: 10;
+	z-index: 2;
 	transform: translateX(-50%);
 }
 
@@ -181,14 +181,6 @@ body {
   border-bottom: 2px solid white;
   margin-left: 80px;
   width: 500px;
-}
-
-#venue {
-  background: linear-gradient(
-    132deg,
-    rgb(110, 136, 161) 100%,
-    rgb(221, 221, 221) 0%
-  );
 }
 
 /* Adding style to icons */
@@ -341,7 +333,9 @@ body {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* _______________________________________________________________ */
+
+
+/* footer */
 .footer {
   padding: 50px 0 20px 0;
   background-color: #35404f;
@@ -427,114 +421,6 @@ body {
 .footer .payment li a:hover{
   transform: scale(1.3);
   color: #000000;
+  
+  
 }
-
-.prod {
-  /* background-color: antiquewhite; */
-  padding: 30px;
-}
-
-.d-block {
-  box-shadow: rgba(0, 0, 0, 0.432) 0px 5px 15px;
-}
-
-#productsSlider {
-  box-shadow: rgba(6, 6, 6, 0.432) 0px 5px 15px;
-  height: 460px;
-}
-
-.bg-primary {
-  background-color: transparent !important;
-}
-
-.bg345 {
-  box-shadow: rgba(5, 5, 5, 0.432) 0px 5px 15px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(33, 71, 75, 1) 18%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
-
-.bg123 {
-  padding-top: 30px !important;
-}
-
-#venue h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.featuredCategory {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.featuredCategory h3 {
-  text-align: center;
-  margin-bottom: 20px;
-  /* font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif; */
-}
-
-.featuredCategoryblock:hover {
-  transform: scale(1.1);
-}
-
-/* Footer */
-/* 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background-color: #d0daee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-content-right {
-  padding-right: 40px;
-}
-
-.footer-text-left {
-  font-size: 25px;
-  padding-left: 40px;
-  word-spacing: 20px;
-}
-
-a.menu {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
-a.menu:hover {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.icon-style {
-  height: 40px;
-  margin-left: 20px;
-}
-
-.icon-style:hover {
-  transform: scale(0.8);
-}*/
-
-.logoCompany {
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-  align-items: center;
-}
-
-.logoCompany img {
-  height: 40px;
-  width: 40px;
-} 

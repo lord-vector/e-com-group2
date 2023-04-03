@@ -25,17 +25,13 @@
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" href="img/Logo2.jpg" />
   </head>
 
   <body>
     <section>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <div class="logoCompany">
-            <img src="img/Logo2.jpg" alt="" />
-            <a class="navbar-brand" href="#">RCSV Store</a>
-          </div>
+          <a class="navbar-brand" href="#">RCSV Store</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -196,16 +192,16 @@
      <div id="carousel" class="carousel slide" data-ride="carousel">
      <div class="carousel-controls">
        <ol class="carousel-indicators">
-         <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/og-macbook-pro-202301.jpeg')"></li>
-         <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/iphone-12-finish-select-202207-purple.jpeg')"></li>
-         <li data-target="#carousel" data-slide-to="2" style="background-image:url('img/airpods-max-hero-select-202011_FMT_WHH.jpeg')"></li>
+         <li data-target="#carousel"  class="active" style="background-image:url('img/og-macbook-pro-202301.jpeg')"></li>
+         <li data-target="#carousel"  style="background-image:url('img/iphone-12-finish-select-202207-purple.jpeg')"></li>
+         <li data-target="#carousel"  style="background-image:url('img/airpods-max-hero-select-202011_FMT_WHH.jpeg')"></li>
          
        </ol>
        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-        <img src="img/left-arrow.svg" alt="Prev"> 
+        <img src="img\left-arrow.svg" alt="Prev"> 
      </a>
      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-       <img src="img/right-arrow.svg" alt="Next">
+       <img src="img\right-arrow.svg" alt="Next">
      </a>
      </div>
      <div class="carousel-inner">
@@ -250,16 +246,16 @@
    
 
     <!-- most-purchased section -->
-    <div class="py-5 bg123" id="venue">
-      <h3>Most Purchased</h3>
-      <div class="container bg345">
+    <h3>Most Purchased</h3>
+    <div class="py-5" style="background-color: #e0e0e0" id="venue">
+      <div class="container">
         <div class="row bg-primary animate-in-down">
           <div class="p-4 col-md-6 align-self-center text-color">
             <p class="m-0">Feel comfortable, and purchase items</p>
             <h2>Discover the products</h2>
             <p class="my-4">
-              Here at RCSV we bring you the varity of Products, it is easy to
-              choose from and get that deliverd to your doorstep
+              Here at RCSV we bring you the varity of Products to choose from,
+              it is easy to choose and get that deliverd to your doorstep
             </p>
             <a href="#productsSlider " class="btn mb-3 p-2 btn-light"
               >View the gallery</a
@@ -305,78 +301,42 @@
     <!-- Featured-categories section -->
     <h2>Featured Categories</h2>
     <div id="Featured-categories"></div>
-    
-    <script src="bootstrap.bundle.min.js"></script>
-    <div class="featuredCategory">
-      <h3>Featured Categories</h3>
-      <div id="Featured-categories"></div>
-    </div>
-
-    <!--Section 7: Footer-->
-    <!-- <div class="footer">
-      <p class="footer-text-left">
-        <a href="index.html" class="menu">home</a>
-        <a href="https://github.com/lord-vector/e-com-group2" class="menu"
-          >about</a
-        >
-        <a href="https://github.com/lord-vector/e-com-group2" class="menu"
-          >credits</a
-        >
-      </p>
-      <div class="footer-content-right">
-        <a href="https://github.com/lord-vector/e-com-group2"
-          ><img src="img/github.jpeg" class="icon-style" alt="Github icon"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img src="img/twitter.jpeg" class="icon-style" alt="Twitter icon"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img src="img/email.jpeg" class="icon-style" alt="Emailicon"
-        /></a>
-      </div>
-    </div> -->
+    <!-- footer section -->
     <footer class="footer">
       <div class="container">
           <div class="row">
-          <div class="col-sm-3">
+          <div class="col">
               <h4 class="title">R V S C</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
               <ul class="social-icon">
-              <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-              <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
-              <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+              <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa fa-twitter" ></i></a>
+              <a href="#" class="social"><i class="fa fa-instagram" ></i></a>
+              <a href="#" class="social"><i class="fa fa-youtube-play"></i></a>
+              <a href="#" class="social"><i class="fa fa-google"></i></a>
               </ul>
               </div>
-          <div class="col-sm-3">
+          <div class="col">
               <h4 class="title">My Account</h4>
-              <span class="acount-icon">          
-              <a href="#"><i class="heart fa fa-heart" aria-hidden="true"></i> Wish List</a>
-              <a href="#"><i class="cart fa fa-cart-plus" aria-hidden="true"></i> Cart</a>
-              <a href="#"><i class="user fa fa-user" aria-hidden="true"></i> Profile</a>
-              <a href="#"><i class="globe fa fa-globe" aria-hidden="true"></i> Language</a>           
-            </span>
+              <div class="acount-icon">          
+              <a href="#"><i class="heart fa fa-heart" ></i> Wish List</a>
+              <a href="#"><i class="cart fa fa-cart-plus"></i> Cart</a>
+              <a href="#"><i class="user fa fa-user"></i> Profile</a>
+              <a href="#"><i class="globe fa fa-globe"></i> Language</a>           
               </div>
-          <div class="col-sm-3">
+              </div>
+          <div class="col">
               <h4 class="title">Category</h4>
               <div class="category">
               <a href="#">men</a>
               <a href="#">women</a>
-              <a href="#">boy</a>
-              <a href="#">girl</a>
-              <a href="#">bag</a>
-              <a href="#">teshart</a>
-              <a href="#">top</a>
-              <a href="#">shos</a>
-              <a href="#">glass</a>
-              <a href="#">kit</a>
-              <a href="#">baby dress</a>
-              <a href="#">kurti</a>           
+              <a href="#">Dresses</a>
+              <a href="#">shoes</a>
+              <a href="#">electronics</a>
+              <a href="#">baby dress</a>          
               </div>
               </div>
-          <div class="col-sm-3">
+          <div class="col">
               <h4 class="title">Payment Methods</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <ul class="payment">
@@ -389,7 +349,7 @@
           </div>
           <hr>
           </footer>
-
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
   <script src="bootstrap.bundle.min.js"></script>
