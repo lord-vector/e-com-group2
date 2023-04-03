@@ -80,7 +80,7 @@ function load(data) {
 
   for (i = 0; i < data.length - 5; i += 5) {
     category += `
-      <a href="./Pages/feature page/feature.html?category=${data[i].category}">
+      <a href="./Pages/feature page/feature.html?category=${data[i].category}" class="featuredCategoryblock">
         <div class="fCatCard">
           <img src="${data[i].thumbnail}" alt="">
         </div>
