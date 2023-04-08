@@ -1,6 +1,6 @@
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const cards = document.querySelectorAll(".card");
+// const prevBtn = document.querySelector(".prev");
+// const nextBtn = document.querySelector(".next");
+// const cards = document.querySelectorAll(".card");
 const nav = document.querySelector(".navbar")  // added nav selector
 
 // function to change background of navbar on scroll
@@ -13,32 +13,32 @@ window.onscroll = ()=> {
   }
 }
 
-let currentCard = 0;
+// let currentCard = 0;
 
-function showCard() {
-  cards.forEach((card) => {
-    card.classList.remove("active");
-  });
-  cards[currentCard].classList.add("active");
-}
+// function showCard() {
+//   cards.forEach((card) => {
+//     card.classList.remove("active");
+//   });
+//   cards[currentCard].classList.add("active");
+// }
 
-function nextCard() {
-  currentCard++;
-  if (currentCard > cards.length - 1) {
-    currentCard = 0;
-  }
-  showCard();
-}
+// function nextCard() {
+//   currentCard++;
+//   if (currentCard > cards.length - 1) {
+//     currentCard = 0;
+//   }
+//   showCard();
+// }
 
-function prevCard() {
-  currentCard--;
-  if (currentCard < 0) {
-    currentCard = cards.length - 1;
-  }
-  showCard();
-}
+// function prevCard() {
+//   currentCard--;
+//   if (currentCard < 0) {
+//     currentCard = cards.length - 1;
+//   }
+//   showCard();
+// }
 
-let interval = setInterval(nextCard, 5000);
+// let interval = setInterval(nextCard, 5000);
 
 // nextBtn.addEventListener("click", () => {
 //   clearInterval(interval);

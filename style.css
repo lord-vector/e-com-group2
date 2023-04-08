@@ -402,7 +402,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Footer */
+
 
 /* .footer {
   position: fixed;
@@ -457,6 +457,7 @@ a.menu:hover {
   height: 40px;
   width: 40px;
 }
+/* Footer */
 
 .footer {
   padding: 50px 0 20px 0;
@@ -546,3 +547,6 @@ a.menu:hover {
   
   
 }
+
+/* profile page css part */
+
